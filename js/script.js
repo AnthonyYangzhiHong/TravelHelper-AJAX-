@@ -36,6 +36,8 @@ function loadData() {
 			'<p>'+article.snippet+'</p>'+
 			'</li>');
 		};
+	}).error(function(){
+		$nytHeaderElem.text("Sorry the articles could not be displayed");	
 	})
 	//var NYTArtical_JSON=jQuery.getJSON(NYTURL);
 	//var obj=("("+NYTArtical_JSON+")");
